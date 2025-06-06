@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   console.log("JS loaded");
+  console.log("JS loaded");
   const startBtn = document.getElementById("start-btn");
   const startScreen = document.getElementById("start-screen");
   const gameArea = document.getElementById("game-area");
