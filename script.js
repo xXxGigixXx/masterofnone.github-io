@@ -26,14 +26,14 @@ function spawnBirds() {
 
   for (let i = 0; i < bulletCount; i++) {
     const bullet = document.createElement("img");
-    bullet.src = "assets/bullet.png";
+    bullet.src = "gun.png"; // You named your bullet image gun.png
     bullet.classList.add("bullet");
     bulletsContainer.appendChild(bullet);
   }
 
   for (let i = 0; i < birdsToSpawn; i++) {
     const bird = document.createElement("img");
-    bird.src = "assets/bird.png";
+    bird.src = "bird.png";
     bird.classList.add("bird");
     bird.style.top = `${Math.random() * 300 + 50}px`;
     bird.style.animationDuration = `${birdSpeed}ms`;
