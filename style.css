@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+#start-screen {
+  background-color: #33ccff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-btn {
+  padding: 20px 40px;
+  font-size: 24px;
+  background: red;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-area {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(#33ccff 70%, #00cc66 30%);
+}
+
+#cat {
+  position: absolute;
+  bottom: 20px;
+  left: -150px;
+  height: 120px;
+  transition: left 2s;
+}
+
+.bird {
+  position: absolute;
+  top: 50px;
+  height: 60px;
+  animation: fly linear forwards;
+}
+
+@keyframes fly {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 110vw;
+  }
+}
+
+#bullets {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.bullet {
+  display: inline-block;
+  margin-right: 5px;
+  height: 40px;
+}
+
+#level-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+}
